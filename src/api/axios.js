@@ -16,7 +16,7 @@ function getCookie(name) {
 }
 
 const api = axios.create({
-  baseURL: "http://localhost:8000/api/",
+  baseURL: "https://insurance-management-backend-4p7z.onrender.com/api/",
   withCredentials: true,
 });
 
