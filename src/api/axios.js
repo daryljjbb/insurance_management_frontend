@@ -18,7 +18,10 @@ function getCookie(name) {
 const api = axios.create({
   baseURL: "https://insurance-management-backend-4p7z.onrender.com/api/",
   withCredentials: true,
+  xsrfCookieName: "csrftoken",
+  xsrfHeaderName: "X-CSRFToken",
 });
+
 
 api.interceptors.request.use(config => {
   const csrfToken = getCookie("csrftoken");
