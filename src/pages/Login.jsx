@@ -18,7 +18,7 @@ const Login = ({ onLoginSuccess }) => {
       
 
       // 3. Redirect to the invoices page after success
-      navigate("/invoices"); 
+      navigate("/dashboard"); 
 
       window.location.reload(); // Refresh to update auth state
     } catch (err) {
